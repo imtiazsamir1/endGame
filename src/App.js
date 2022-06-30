@@ -5,6 +5,8 @@ import Home from "./Pages/Home/Home";
 import Footer from "./Pages/Footer/Footer";
 import { Routes, Route, Link } from "react-router-dom";
 import ToDo from "./Pages/ToDo/ToDo";
+import CompletedTasks from "./Pages/CompletedTasks/CompletedTasks";
+import Calander from "./Pages/Calander/Calander";
 
 function App() {
   return (
@@ -12,7 +14,12 @@ function App() {
       <Navber></Navber>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route
+          path="/compleatedTasks"
+          element={<CompletedTasks></CompletedTasks>}
+        ></Route>
         <Route path="/toDo" element={<ToDo></ToDo>}></Route>
+        <Route path="/calander" element={<Calander></Calander>}></Route>
       </Routes>
 
       <Footer></Footer>

@@ -65,12 +65,18 @@ const Navber = () => {
           <ul class="menu menu-horizontal p-0">
             <li>
               <a>
+                <Link to="/compleatedTasks">Compleated tasks</Link>
+              </a>
+            </li>
+            <li>
+              <a>
                 <Link to="/toDo">To-Do</Link>
               </a>
             </li>
-
             <li>
-              <a>Item 3</a>
+              <a>
+                <Link to="/calander">Calendar</Link>
+              </a>
             </li>
           </ul>
         </div>
