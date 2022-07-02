@@ -1,9 +1,11 @@
 import React from "react";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/dist/style.css";
 
-const Calander = () => {
+const Calander = ({ date, setDate }) => {
   return (
-    <div>
-      <h3>hmm</h3>
+    <div className="mx-auto">
+      <DayPicker mode="single" selected={date} onSelect={setDate} />
     </div>
   );
 };
